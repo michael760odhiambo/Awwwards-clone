@@ -33,20 +33,20 @@ def home(request):
 
     return render(request, 'all-pages/index.html',{"winners":winners,"profile":profile,"date":date,"nominees":nominees,"directories":directories,"resources":resources})
 
-# def create_profile(request):
-#     current_user = request.user
-#     if request.method == 'POST':
-#         form = ProfileForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             profile = form.save(commit=False)
-#             profile.username = current_user
-#             profile.save()
+def create_profile(request):
+    current_user = request.user
+    if request.method == 'POST':
+        form = ProfileForm(request.POST, request.FILES)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.username = current_user
+            profile.save()
 
-#             return redirect('homepage')
-#     else:
-#         form=ProfileForm()
+            return redirect('homepage')
+    else:
+        form=ProfileForm()
 
-#     return render(request, 'all-pages/create_profile.html', {'form':form})
+    return render(request, 'all-pages/create_profile.html', {'form':form})
 
 # def new_project(request):
 #     current_user = request.user
