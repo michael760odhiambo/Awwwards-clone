@@ -1,5 +1,5 @@
 # Aword
-* 
+* allows developers to host here projects and compete for a grand price
 
 Author
 
