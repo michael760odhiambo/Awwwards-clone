@@ -81,21 +81,21 @@ def profile(request):
 # #     return render(request, 'all-pages/user-profile.html', {'profile':profile, 'project':project}) 
 
 
-# def search_results(request):
-#     current_user = request.user
-#     profile = Profile.objects.get(username=current_user)
-#     if 'project' in request.GET and request.GET['project']:
-#         search_term = request.GET.get('project')
-#         searched_projects = Project.search_project(search_term)
-#         message = f'{search_term}'
+def search_results(request):
+    current_user = request.user
+    profile = Profile.objects.get(username=current_user)
+    if 'project' in request.GET and request.GET['project']:
+        search_term = request.GET.get('project')
+        searched_projects = Project.search_project(search_term)
+        message = f'{search_term}'
 
-#         print(searched_projects)
+        print(searched_projects)
 
-#         return render(request, 'all-pages/search.html', {"message":message,"projects":searched_projects,"profile":profile})        
+        return render(request, 'all-pages/search.html', {"message":message,"projects":searched_projects,"profile":profile})        
 
-#     else:
-#         message="You haven't searched for any term"
-#         return render(request,'all-pages/search.html',{"message":message})
+    else:
+        message="You haven't searched for any term"
+        return render(request,'all-pages/search.html',{"message":message})
 
 # def signup(request):
 #     if request.method == 'POST':
