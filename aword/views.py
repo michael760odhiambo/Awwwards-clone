@@ -48,22 +48,22 @@ def create_profile(request):
 
     return render(request, 'all-pages/create_profile.html', {'form':form})
 
-# def new_project(request):
-#     current_user = request.user
-#     profile = Profile.objects.get(username=current_user)
-#     if request.method == 'POST':
-#         form = ProjectForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             project = form.save(commit=False)
-#             project.username = current_user
-#             project.pic = project.pic
-#             project.country = project.country
-#             project.save()
+def new_project(request):
+    current_user = request.user
+    profile = Profile.objects.get(username=current_user)
+    if request.method == 'POST':
+        form = ProjectForm(request.POST, request.FILES)
+        if form.is_valid():
+            project = form.save(commit=False)
+            project.username = current_user
+            project.pic = project.pic
+            project.country = project.country
+            project.save()
 
-#     else:
-#         form = ProjectForm()
+    else:
+        form = ProjectForm()
 
-#     return render(request, 'all-pages/new_project.html', {'form':form})                        
+    return render(request, 'all-pages/new_project.html', {'form':form})                        
 
 
 # def profile(request):
