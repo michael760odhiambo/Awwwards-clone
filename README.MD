@@ -18,61 +18,61 @@
 
 * Install Heroku that helps to deploy your application.
 
-Clone https://github.com/michael760odhiambo/instagram-Clone.git
+* Clone https://github.com/michael760odhiambo/instagram-Clone.git
 
-Atleast have a computer or a laptop
+* Atleast have a computer or a laptop
 
-Have an internet connection
+* Have an internet connection
 
-Visit https://django254.herokuapp.com/
+* Visit https://django254.herokuapp.com/
 
-install Django
+* install Django
 
-$ pip install django==1.11
+* $ pip install django==1.11
 
-Create a virtual environment
+* Create a virtual environment
 
-$ sudo apt-get install python3.6-venv
+* $ sudo apt-get install python3.6-venv
 
-$ python3.6 -m venv virtual
+* $ python3.6 -m venv virtual
 
-$ source virtual/bin/activate
+* $ source virtual/bin/activate
 
-Install gunicorn: (virtual)
+* Install gunicorn: (virtual)
 
-$ python3.6 -m pip install gunicorn
+* $ python3.6 -m pip install gunicorn
 
-step2 to follow
+* step2 to follow
 
-On GitHub, navigate to the main page of the repository.
+* On GitHub, navigate to the main page of the repository.
 
-Under the repository name, click Clone or download.
+* Under the repository name, click Clone or download.
 
-In the Clone with HTTPs section, click to copy the clone URL for the repository.
+* In the Clone with HTTPs section, click to copy the clone URL for the repository.
 
-Open Terminal.
+* Open Terminal.
 
-Change the current working directory to the location where you want the cloned directory to be made.
+* Change the current working directory to the location where you want the cloned directory to be made.
 
-Type git clone, and then paste the URL you copied in Step 2.
+* Type git clone, and then paste the URL you copied in Step 2.
 
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+* $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
-Press Enter. Your local clone will be created.
+* Press Enter. Your local clone will be created.
 
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+* $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
-$ Cloning into Spoon-Knife...
+* $ Cloning into Spoon-Knife...
 
-$ remote: Counting objects: 10, done.
+* $ remote: Counting objects: 10, done.
 
-$ remote: Compressing objects: 100% (8/8), done.
+* $ remote: Compressing objects: 100% (8/8), done.
 
-$ remove: Total 10 (delta 1), reused 10 (delta 1)
+* $ remove: Total 10 (delta 1), reused 10 (delta 1)
 
-$ Unpacking objects: 100% (10/10), done.
+* $ Unpacking objects: 100% (10/10), done.
 
-you will see something similar to what is above here and you will have already cloned the repo.
+* you will see something similar to what is above here and you will have already cloned the repo.
 
 Contact
 you can reach me on social media through
