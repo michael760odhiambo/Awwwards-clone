@@ -34,18 +34,18 @@ class Technologies(models.Model):
     def delete_technologies(cls, technologies):
         cls.objects.filter(technologies=technologies).delete()
 
-# class Countries(models.Model):
-#     countries = models.CharField(max_length=40)
+class Countries(models.Model):
+    countries = models.CharField(max_length=40)
 
-#     def __str__(self):
-#         return self.countries
+    def __str__(self):
+        return self.countries
 
-#     def save_country(self):
-#         self.save()
+    def save_country(self):
+        self.save()
 
-#     @classmethod
-#     def delete_country(cls, countries):
-#         cls.objects.filter(countries=countries).delete()
+    @classmethod
+    def delete_country(cls, countries):
+        cls.objects.filter(countries=countries).delete()
 
 # class Project(models.Model):
 #     title = models.CharField(max_length=40)
