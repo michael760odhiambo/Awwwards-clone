@@ -8,15 +8,15 @@ class ProfileForm(forms.ModelForm):
         model = Profile
         exclude = ['username']
 
-# class ProjectForm(forms.ModelForm):
-#     class Meta:
-#         model = Project
-#         exclude = ['username', 'post_date', 'pic']
-#         widgets = {
-#             'technologies':forms.CheckboxSelectMultiple(),
-#             'categories':forms.CheckboxSelectMultiple(),
-#             'countries':forms.CheckboxSelectMultiple(),
-#         }
+class ProjectForm(forms.ModelForm):
+    class Meta:
+        model = Project
+        exclude = ['username', 'post_date', 'pic']
+        widgets = {
+            'technologies':forms.CheckboxSelectMultiple(),
+            'categories':forms.CheckboxSelectMultiple(),
+            'countries':forms.CheckboxSelectMultiple(),
+        }
 
 # class SignUpForm(UserCreationForm):
 #     first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
