@@ -47,25 +47,25 @@ class Countries(models.Model):
     def delete_country(cls, countries):
         cls.objects.filter(countries=countries).delete()
 
-# class Project(models.Model):
-#     title = models.CharField(max_length=40)
-#     landing_page = models.ImageField(upload_to='media')
-#     description = HTMLField()
-#     link = models.CharField(max_length=200)
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
-#     country = models.ForeignKey(Countries,on_delete=models.CASCADE)
-#     technologies = models.ManyToManyField(Technologies)
-#     categories = models.ManyToManyField(Categories)
-#     post_date = models.DateTimeField(auto_now_add=True)
-#     pic = models.ImageField(upload_to='media/')
+class Project(models.Model):
+    title = models.CharField(max_length=40)
+    landing_page = models.ImageField(upload_to='media')
+    description = HTMLField()
+    link = models.CharField(max_length=200)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    country = models.ForeignKey(Countries,on_delete=models.CASCADE)
+    technologies = models.ManyToManyField(Technologies)
+    categories = models.ManyToManyField(Categories)
+    post_date = models.DateTimeField(auto_now_add=True)
+    pic = models.ImageField(upload_to='media/')
 
-#     def __str__(self):
-#         return self.title
+    def __str__(self):
+        return self.title
 
-#     @classmethod
-#     def search_project(cls,search_term):
-#         aword = cls.objects.filter(title__icontains=search_term)
-#         return aword
+    @classmethod
+    def search_project(cls,search_term):
+        aword = cls.objects.filter(title__icontains=search_term)
+        return aword
         
 # class Profile(models.Model):
 #     pic = models.ImageField(upload_to='media')
