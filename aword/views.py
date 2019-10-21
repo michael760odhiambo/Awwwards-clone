@@ -66,12 +66,12 @@ def new_project(request):
     return render(request, 'all-pages/new_project.html', {'form':form})                        
 
 
-# def profile(request):
-#     current_user = request.user
-#     profile = Profile.objects.get(username=current_user)
-#     projects = Project.objects.filter(user=current_user)
+def profile(request):
+    current_user = request.user
+    profile = Profile.objects.get(username=current_user)
+    projects = Project.objects.filter(user=current_user)
 
-#     return render(request, 'all-pages/profile.html', {'profile':profile,'projects':projects})
+    return render(request, 'all-pages/profile.html', {'profile':profile,'projects':projects})
 
 # # def user_profile(request,username):
 # #     user = User.objects.get(current_user=username)
