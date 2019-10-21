@@ -4,14 +4,14 @@
 # Author
 
 * MICHAEL ODHIAMO
-Technologies used
-Django
+# Technologies used
+* Django
 
-Python
+* Python
 
-HTML
+* HTML
 
-CSS
+* CSS
 
 Setup/Installation Instruction
 Install python version 3.6.8
