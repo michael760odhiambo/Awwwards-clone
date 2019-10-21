@@ -13,10 +13,10 @@
 
 * CSS
 
-Setup/Installation Instruction
-Install python version 3.6.8
+# Setup/Installation Instruction
+* Install python version 3.6.8
 
-Install Heroku that helps to deploy your application.
+* Install Heroku that helps to deploy your application.
 
 Clone https://github.com/michael760odhiambo/instagram-Clone.git
 
