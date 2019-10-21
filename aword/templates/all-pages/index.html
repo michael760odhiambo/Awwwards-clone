@@ -1,20 +1,80 @@
 
-{% extends 'all-pages/base.html' %}
-
+<!-- {% extends 'all-pages/base.html' %}
 
 {% block content %}
 <div class="one">
+    
         <div class="two">
-
+            <h3>Site of the day {{post_date}}</h3>
         </div>
         <div class="three">
-
+            <button class="btn btn-info"> view site</button>
+            <button class="btn btn-outline-info"> collect</button>
+            
         </div>
 
         <div class="four">
+                <h1>Karel Derick Family</h1>
+                <p>By creative nights from chech republic</p>
+                <div class="middle">
+
+                        <div class="circle" id="circle-a">
+                            
+                          <p class="rating">design</p>
+                        </div>
+                        <div class="circle" id="circle-b">
+                            
+                          <p class="rating">usability</p>
+                        </div>
+                        <div class="circle" id="circle-c">
+                            
+                          <p class="rating">creativity</p>
+                        </div>
+                        <div class="circle" id="circle-d">
+                            
+                          <p class="rating">content</p>
+                        </div>
+            
+                      </div>
             
         </div>
 
     </div>
+    {% if projects %}
+    <div class="text-center">
+    
+    <hr>
+    <div class="container">
+   
+    
+    <div class="row">
+      {% for project in projects %}
+      <div class="col-md-4">
 
+          <div class="card" style="width: 18rem;">
+              <div class="image">
+                  <img src="{{project.landing_page.url}}" class="card-img-top" alt="" height="300px" width="300px">
+                <div class="middle">
+                   <div class="text">{{project.title}}</div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">{{project.title}}</h5>
+              <p class="card-text">From {{project.country}}<span class="date">{{project.post_date}}</span></p>
+              <a href="/site/{{project.id}}" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>  
+         
+      {% endfor %}
+    
+    </div>
+      {%endif %}
+    
+    </div>
+    </div>
+
+      
 {% endblock %}
+ -->

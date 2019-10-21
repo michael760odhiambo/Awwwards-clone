@@ -1,0 +1,18 @@
+<!-- {% extends 'all-pages/base.html' %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+{% block content %}
+<div class="panel panel-default">
+        <div class="panel-body">
+          <form action="{% url 'create-profile'%}" method="post"  enctype="multipart/form-data">
+    
+            {% csrf_token%}
+            {% bootstrap_form form %}
+            <div class="form-group text-center">
+              <input type="submit" class="btn btn-primary sign-up-button" value="Share">
+            </div>
+            <input type="hidden" name="next" value="{{next}}">
+          </form>
+        </div>
+      </div>
+{% endblock %} -->
