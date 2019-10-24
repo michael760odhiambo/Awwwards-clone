@@ -24,7 +24,7 @@
 
 * Have an internet connection
 
-* Visit https://django254.herokuapp.com/
+* Visit https://wordadek.herokuapp.com/directory/
 
 * install Django
 
